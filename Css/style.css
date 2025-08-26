@@ -115,8 +115,8 @@ p {
 }
 
 .imagenSobreMi img {
-  height: 60vh;
-  border-radius: 50%;
+  height: 74vh;
+  border-radius: 25%;
   box-shadow: 0 10px 20px rgb(255, 0, 0);
 }
 
