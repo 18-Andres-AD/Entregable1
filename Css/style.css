@@ -148,12 +148,11 @@ p {
 
 .caja-habilidad h3 {
   margin-bottom: 2rem;
+  font-size: 2rem;
   color: #00adb5;
   font-family: "Fjalla One", sans-serif;
-  font-size: 2rem;
 }
 
-/* Caja general */
 .contenedor-habilidades {
   padding: 1.5rem;
   border-radius: 10px;
@@ -207,7 +206,7 @@ p {
 }
 
 
-/* Lista de habilidades blandas */
+/* habilidades blandas */
 .blandas {
   justify-items: center;
   align-items: center;
@@ -282,7 +281,7 @@ p {
 .footer {
   box-shadow: inset 0 0 40px rgb(255, 0, 0);
   text-align: center;
-  background: #000000;
+  background-color: #000000;
   color: #fff;
   padding: 3rem;
   font-family: "Fjalla One", sans-serif;
@@ -388,7 +387,7 @@ p {
     width: 100px;
   }
 
-  /* Lista de habilidades blandas */
+  /* habilidades blandas */
 
   .contenedor-blandas {
     grid-template-columns: 1fr;
@@ -492,15 +491,12 @@ p {
     font-size: 1.5rem;
   }
 
-  /* Caja general */
-
   .caja-habilidad {
     padding: 1.5rem;
     height: 100vh;
   }
 
   .contenedor-iconos {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "html" "css" "java";
@@ -515,7 +511,7 @@ p {
     width: 80px;
   }
 
-  /* Lista de habilidades blandas */
+  /* habilidades blandas */
   .contenedor-blandas {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
