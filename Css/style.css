@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=Macondo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#informacion h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.6rem;
+  margin-left: 30px;
+}
+
+.logoNombre {
+  width: 50px;
+  margin-left: 15px;
+}
+
+#informacion {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+header {
+  background: white;
+  box-shadow: inset 0 0 80px rgba(35, 145, 169);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Cuerpo */
+#inicio {
+  height: 100vh;
+  background-color: #0D0D0D;
+  box-shadow: inset 0 0 40px rgb(0, 208, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "contenidoInicio imagenInicio";
+}
+
+.contenidoInicio {
+  grid-area: contenidoInicio;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15vh;
+}
+
+h2 {
+  color: #ff0000;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2, 5rem;
+}
+
+#inicio h1 {
+  color: #ffffff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 6rem;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.textoInicio {
+  margin-top: 20px;
+  width: 60vh;
+}
+
+.imagenInicio img {
+  height: 60vh;
+  border-radius: 50%;
+  box-shadow: 0 10px 40px rgb(0, 208, 255);
+}
+
+.imagenInicio:hover {
+  transform: scale(1.1);
+}
+
+.imagenInicio {
+  grid-area: imagenInicio;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Informacion mia */
+
+#sobreMi {
+  box-shadow: inset 0 0 40px rgb(255, 0, 0);
+  background-color: #0f0f0ff5;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imagenSobreMi textoSobreMi";
+}
+
+.textoSobreMi {
+  grid-area: textoSobreMi;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5vh;
+  width: 60vh;
+}
+
+.imagenSobreMi img {
+  height: 60vh;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgb(255, 0, 0);
+}
+
+.imagenSobreMi:hover {
+  transform: scale(1.1);
+}
+
+.imagenSobreMi {
+  grid-area: imagenSobreMi;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Habilidades --- */
+#habilidades {
+  background: #000000;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: inset 0 0 40px rgb(0, 208, 255);
+}
+
+#habilidades h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #ff0000;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.caja-habilidad h3 {
+  margin-bottom: 2rem;
+  color: #00adb5;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+}
+
+/* Caja general */
+.contenedor-habilidades {
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 40px rgb(35, 145, 169);
+  margin-bottom: 2rem;/
+}
+
+.caja-habilidad {
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 40px rgba(121, 239, 255, 0.544);
+  margin-bottom: 2rem;
+  height: 65vh;
+}
+
+.contenedor-iconos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "html css java";
+  gap: 50px;
+}
+
+#html {
+  grid-area: html;
+}
+
+#java {
+  grid-area: java;
+}
+
+#css {
+  grid-area: css;
+}
+
+.habilidades {
+  box-shadow: 0 6px 10px rgb(35, 145, 169);
+  height: 45vh;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.habilidades img {
+  width: 200px;
+}
+
+.habilidades:hover {
+  transform: scale(1.1);
+}
+
+
+/* Lista de habilidades blandas */
+.blandas {
+  justify-items: center;
+  align-items: center;
+}
+
+.contenedor-blandas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "Tra-Equi Re-Pro"
+    "Cum-Efec Adap";
+  gap: 50px;
+}
+
+#Tra-Equi {
+  grid-area: Tra-Equi;
+}
+
+#Re-Pro {
+  grid-area: Re-Pro;
+}
+
+#Cum-Efec {
+  grid-area: Cum-Efec;
+}
+
+#Adap {
+  grid-area: Adap;
+}
+
+.blanda {
+  background-color: #b2f5ff73;
+  border-radius: 50px;
+  box-shadow: 0 6px 10px rgb(0, 114, 140);
+  width: 50vh;
+  height: 12vh;
+}
+
+.blanda p {
+  color: #2c2c2c;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Lobster", sans-serif;
+
+}
+
+.blanda:hover {
+  transform: scale(1.1);
+}
+
+
+/* WhatsApp */
+.logoWhatsApp {
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  position: fixed;
+}
+
+.logoWhatsApp img {
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.logoWhatsApp img:hover {
+  transform: scale(1.1);
+}
+
+
+/*  Pie de pagina */
+.footer {
+  box-shadow: inset 0 0 40px rgb(255, 0, 0);
+  text-align: center;
+  background: #000000;
+  color: #fff;
+  padding: 3rem;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.footer .social-icons {
+  margin-bottom: 2rem;
+}
+
+.footer .social-icons a {
+  margin: 12px;
+  color: white;
+  font-size: 2.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #00adb5;
+}
+
+.footer .contacto {
+  margin-bottom: 2rem;
+}
+
+.footer .contacto p {
+  margin: 8px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.footer .contacto a {
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .derechos {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+.footer .autor {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contenidoInicio {
+    margin-left: 8vh;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #inicio h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .textoInicio {
+    width: 30vh;
+  }
+
+  .imagenInicio img {
+    height: 35vh;
+  }
+
+  /* Sobre mi */
+  .textoSobreMi {
+    margin-left: 2vh;
+    width: 32vh;
+  }
+
+  .imagenSobreMi img {
+    height: 35vh;
+  }
+
+  /* Habilidades */
+
+  #habilidades h2 {
+    font-size: 3rem;
+  }
+
+  .caja-habilidad h3 {
+    font-size: 2rem;
+  }
+
+  .contenedor-iconos {
+    gap: 30px;
+  }
+
+  .habilidades {
+    height: 40vh;
+  }
+
+  .habilidades img {
+    width: 100px;
+  }
+
+  /* Lista de habilidades blandas */
+
+  .contenedor-blandas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "Tra-Equi" "Re-Pro"
+      "Cum-Efec" "Adap";
+    gap: 40px;
+  }
+
+  .blanda {
+    width: 40vh;
+    height: 8vh;
+  }
+
+  .blanda p {
+    font-size: 1.6rem;
+  }
+
+
+  /* WhatsApp */
+  .logoWhatsApp img {
+    width: 50px;
+  }
+
+  /*  Pie de pagina */
+  .footer .social-icons a {
+    font-size: 2rem;
+  }
+
+  .footer .contacto p {
+    font-size: 1rem;
+  }
+
+  .footer .derechos {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #informacion h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Cuerpo */
+  #inicio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contenidoInicio" "imagenInicio";
+  }
+
+  .contenidoInicio {
+    margin-left: 7vh;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  #inicio h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .textoInicio {
+    width: 38vh;
+  }
+
+  .imagenInicio img {
+    height: 40vh;
+  }
+
+  /* Informacion mia */
+
+  #sobreMi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "textoSobreMi" "imagenSobreMi";
+  }
+
+  .textoSobreMi {
+    margin-left: 5vh;
+    width: 35vh;
+  }
+
+  .imagenSobreMi img {
+    height: 40vh;
+  }
+
+  /* --- Habilidades --- */
+
+  #habilidades h2 {
+    font-size: 2rem;
+  }
+
+  .caja-habilidad h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Caja general */
+
+  .caja-habilidad {
+    padding: 1.5rem;
+    height: 100vh;
+  }
+
+  .contenedor-iconos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "html" "css" "java";
+    gap: 50px;
+  }
+
+  .habilidades {
+    height: 20vh;
+  }
+
+  .habilidades img {
+    width: 80px;
+  }
+
+  /* Lista de habilidades blandas */
+  .contenedor-blandas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "Tra-Equi" "Re-Pro"
+      "Cum-Efec" "Adap";
+  }
+
+  .blanda {
+    width: 30vh;
+    height: 9vh;
+  }
+
+  .blanda p {
+    font-size: 1.5rem;
+  }
+
+  /* WhatsApp */
+  .logoWhatsApp img {
+    width: 40px;
+  }
+
+
+  /*  Pie de pagina */
+
+  .footer .social-icons a {
+    font-size: 2rem;
+  }
+
+  .footer .contacto p {
+    font-size: 1rem;
+  }
+
+  .footer .derechos {
+    font-size: 0.7rem;
+  }
+}
