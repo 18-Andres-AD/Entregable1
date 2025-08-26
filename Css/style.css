@@ -395,7 +395,7 @@ p {
     grid-template-areas:
       "Tra-Equi" "Re-Pro"
       "Cum-Efec" "Adap";
-    gap: 40px;
+    gap: 30px;
   }
 
   .blanda {
@@ -440,7 +440,7 @@ p {
   }
 
   .contenidoInicio {
-    margin-left: 7vh;
+    margin-left: 7vh;    
   }
 
   h2 {
@@ -474,7 +474,9 @@ p {
 
   .textoSobreMi {
     margin-left: 5vh;
-    width: 35vh;
+    width: 40vh;
+    display: flex;
+    align-items: center;
   }
 
   .imagenSobreMi img {
@@ -521,12 +523,12 @@ p {
   }
 
   .blanda {
-    width: 30vh;
+    width: 29vh;
     height: 9vh;
   }
 
   .blanda p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   /* WhatsApp */
