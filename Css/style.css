@@ -30,6 +30,33 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navmenu li a {
+  text-decoration: none;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1rem;
+  color: rgb(35, 145, 169);
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navmenu li a:hover {
+  background: rgb(35, 145, 169);
+  color: white;
+  box-shadow: 0 4px 10px rgba(35, 145, 169, 0.4);
 }
 
 
@@ -278,7 +305,7 @@ p {
 
 
 /*  Pie de pagina */
-.footer {
+#footer {
   box-shadow: inset 0 0 40px rgb(255, 0, 0);
   text-align: center;
   background-color: #000000;
@@ -287,50 +314,60 @@ p {
   font-family: "Fjalla One", sans-serif;
 }
 
-.footer .social-icons {
+#footer .social-icons {
   margin-bottom: 2rem;
 }
 
-.footer .social-icons a {
+#footer .social-icons a {
   margin: 12px;
   color: white;
   font-size: 2.5rem;
   transition: transform 0.3s, color 0.3s;
 }
 
-.footer .social-icons a:hover {
+#footer .social-icons a:hover {
   transform: scale(1.2);
   color: #00adb5;
 }
 
-.footer .contacto {
+#footer .contacto {
   margin-bottom: 2rem;
 }
 
-.footer .contacto p {
+#footer .contacto p {
   margin: 8px;
   font-size: 1.2rem;
   color: #ffffff;
 }
 
-.footer .contacto a {
+#footer .contacto a {
   color: #ff0000;
   font-weight: bold;
   text-decoration: none;
 }
 
-.footer .derechos {
+#footer .derechos {
   font-size: 0.9rem;
   color: #aaa;
   margin-top: 2rem;
 }
 
-.footer .autor {
+#footer .autor {
   color: #ff0000;
   font-weight: bold;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+
+  #informacion h2 {
+    font-size: 1.2rem;
+  }
+
+  .navmenu li a {
+    font-size: 0.8rem;
+  }
+
   .contenidoInicio {
     margin-left: 8vh;
   }
@@ -414,22 +451,26 @@ p {
   }
 
   /*  Pie de pagina */
-  .footer .social-icons a {
+  #footer .social-icons a {
     font-size: 2rem;
   }
 
-  .footer .contacto p {
+  #footer .contacto p {
     font-size: 1rem;
   }
 
-  .footer .derechos {
+  #footer .derechos {
     font-size: 0.6rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {  
   #informacion h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  #menu{
+    display: none;
   }
 
   /* Cuerpo */
@@ -440,7 +481,7 @@ p {
   }
 
   .contenidoInicio {
-    margin-left: 7vh;    
+    margin-left: 7vh;
   }
 
   h2 {
@@ -537,15 +578,15 @@ p {
   }
 
   /*  Pie de pagina */
-  .footer .social-icons a {
+  #footer .social-icons a {
     font-size: 2rem;
   }
 
-  .footer .contacto p {
+  #footer .contacto p {
     font-size: 1rem;
   }
 
-  .footer .derechos {
+  #footer .derechos {
     font-size: 0.7rem;
   }
 }
